@@ -1,0 +1,70 @@
+// 写项目的一些页面公共的样式(例如头部和底部)
+
+@main-color:#006699;
+
+img {
+    vertical-align: middle;
+} 
+
+
+#header {
+    height: 45px;
+    background-color: @main-color;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    >h4 {
+        font-weight: normal;
+        line-height: 45px;
+        margin: 0;
+    }
+    >a {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+
+#footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: @main-color;
+    width: 100%;
+    z-index: 999;
+    >.mui-row {
+        >div {
+            >a {
+                display: block;
+                padding: 11px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                &::before {
+                    display: block;
+                }
+                &.active {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+
+
+// html,body {
+//     height: 100%;
+// }
+
+#main {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    // height: 100%;
+}
