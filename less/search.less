@@ -1,0 +1,64 @@
+@import "base.less";
+
+
+#main {
+    .search-form {
+        position: relative;
+        padding: 10px;
+        >.search-input {
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid @main-color;
+            font-size: 12px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 0px;
+        }
+        >.btn-search {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            height: 30px;
+            width: 60px;
+            background-color: @main-color;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    .search-history {
+        padding: 10px;
+        color: #666;
+        .search-history-heading {
+            font-size: 14px;
+            height: 20px;
+            
+            >span  {
+                &:first-child {
+                    float: left;
+                    
+                }
+                &:last-child{
+                    float: right;
+                    line-height: 20px;
+                }
+            }
+        }
+        .search-history-list {
+            margin-top: 10px;
+            >ul {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                >li {
+                    >a {
+                        display: block;
+                        font-size: 14px;
+                        >i {
+                            float: right;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
